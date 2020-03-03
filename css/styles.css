@@ -5,7 +5,8 @@
    height: 100%;
    background-size: 100%;
    color: white;
-   padding: 20px
+   background-size: cover;
+   padding: 10px;
  }
 
 h1{
@@ -26,6 +27,11 @@ p {
   position: relative; left: 5px;
 }
 
-button{
+.bottom-right
+{
   float: right;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
 }
