@@ -15,12 +15,12 @@ h1
   font-size: 50px;
 }
 
-.col-md-4 {
+p {
   color: maroon;
   line-height: 20px;
   border: 5px solid maroon;
   padding: 3px;
   text-align: center;
   background: rgba(255,255,255,.5);
-  position: relative; left: 10px;
+  position: relative; left: 5px;
 }
