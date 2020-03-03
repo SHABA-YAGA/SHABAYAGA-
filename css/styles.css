@@ -1,13 +1,14 @@
- body{
+ .home{
    font-family: 'Squada One', cursive;
    background-image: url(../img/pizza.jpg);
+   width: 100%;
+   height: 100%;
    background-size: 100%;
    color: white;
    padding: 20px
  }
 
-h1
-{
+h1{
   text-shadow: -1px -1px 0 maroon, 1px -1px 0 maroon, -1px 1px 0 maroon, 1px 1px 0 maroon;
   background: maroon;
   width: cover;
@@ -23,4 +24,8 @@ p {
   text-align: center;
   background: rgba(255,255,255,.5);
   position: relative; left: 5px;
+}
+
+button{
+  float: right;
 }
