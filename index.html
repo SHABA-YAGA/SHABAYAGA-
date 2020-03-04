@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="home">
@@ -33,61 +32,108 @@
         </div>
       </div>
     </div>
-    <form id="pizza">
+    <div id="order">
+            <div class="container">
+                <div class="card card-body bg-secondary">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto py-2">
+                            <form id="pizzaform">
 
-      <h2>Order Away!</h2>
+                                <h2>Select pizza and place your order</h2>
 
-      <div class="form-group">
-        <label>Select Pizza:</label>
-        <select class="form-control" id="type">
-          <option>Jeshi beef</option>
-          <option>Bembeleza Chicken</option>
-          <option>Chunga Moyo Mutton</option>
-          <option>Kigumu Hawaiian</option>
-          <option>Bure Vegeterian</option>
-          <option>Choma Kuku</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Select pizza size:</label>
-        <select class="form-control" id="size">
-          <option value="0">Large @ ksh 1000</option>
-          <option value="1">Medium @ ksh 800</option>
-          <option value="2">Small @ ksh  600</option>
-        </select>
-        <div class="form-group">
-          <label>Choose crust:</label>
-          <select class="form-control" id="crust">
-            <option value="0">Thin @ ksh 100</option>
-            <option value="1">Double-decker @ ksh 100</option>
-            <option value="2">Honey-oats ksh 100</option>
-          </select>
+                                <div class="form-group">
+                                    <label>Select the type of pizza you want:</label>
+                                    <select class="form-control" id="type">
+                                        <option>American chicken pizza</option>
+                                        <option>British beef pizza</option>
+                                        <option>Spanish matton pizza</option>
+                                        <option>Italian daily pizza</option>
+                                        <option>Dutch chicken pizza</option>
+                                        <option>Congolese beef pizza</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Select the size of your pizza:</label>
+                                    <select class="form-control" id="size">
+                                        <option value="0">Large @ ksh 1200</option>
+                                        <option value="1">Medium @ ksh 950</option>
+                                        <option value="2">Small @ ksh750</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose your favorite crust:</label>
+                                    <select class="form-control" id="crust">
+                                        <option value="0">Cripsy @ ksh 50</option>
+                                        <option value="1">Stuffed @ ksh 50</option>
+                                        <option value="2">Gluten-free ksh 50</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose your favorite topping:</label>
+                                    <select class="form-control" id="topping">
+                                        <option value="0">red pepper @ ksh 80</option>
+                                        <option value="1">black olives @ ksh 60</option>
+                                        <option value="2">white onions @ ksh 50</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group" required>
+                                    <label>Number of pizza:</label>
+                                    <input type="number" id="num" class="form-control" min="1" required>
+                                </div>
+                                <div class="form-group" required>
+                                    <label>option for delivery:</label>
+                                    <select class="form-control" id="mode">
+                                        <option value="0">pizza delivered @ ksh 300</option>
+                                        <option value="1">pick from our cafe</option>
+
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <button type="submit" class="btn btn-primary checkout" id="checkout">Place an
+                                        Order</button>
+
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label>Choose topping:</label>
-          <select class="form-control" id="topping">
-            <option value="0">Pineapples @ ksh 50</option>
-            <option value="1">Pickles @ ksh 50</option>
-            <option value="2">Peperonni @ ksh 60</option>
-          </select>
-        </div>
-      </div>
-        <div class="form-group" required>
-          <label>Number of pizza:</label>
-          <input type="number" id="num" class="form-control" min="1" required>
-          </div>
-          <div class="form-group" required>
-            <label>option for delivery:</label>
-            <select class="form-control" id="mode">
-              <option value="0">delivery @ ksh 300</option>
-              <option value="1">pick from our cafe</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary checkout" id="checkout">Place an
-            Order</button>
-          </div>
-        </form>
+        <hr>
+        <div id="contact">
+            <div class="container">
+                <div class="col-md-12 ">
+                    <div class="card card-body bg-secondary">
 
+                        <h2>Contact us through.</h2>
+                        <div>
+                            <form id="contactform">
+                                <label>User Name</label><br>
+                                <input name="name" type="text" placeholder="user name" id="name" required><br><br>
+                                <label>User Email</label><br>
+                                <input name="Email" type="text" placeholder="Email address" id="email" required>
+                                <div>
+                                    <textarea name="message" placeholder="Your message here..." id="" cols="100"
+                                        rows="5"></textarea><br>
+                                    <button type="submit" onclick="userName()" class="btn btn-primary">Submit
+                                        text</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js" charset="utf-8"></script>
       </body>
   </html>
