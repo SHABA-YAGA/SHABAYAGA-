@@ -35,3 +35,7 @@ p {
   right: 16px;
   font-size: 18px;
 }
+
+form {
+  background-image: (url(../img/maroon.jpg));
+}
